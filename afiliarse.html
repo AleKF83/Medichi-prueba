@@ -1,71 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title></title> 
-	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
-	<link rel="stylesheet" href="estilos.css">
- 	<script defer src="index.js"></script>
 
-</head>  
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport"
+    content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="estilos.css">
+  <script defer src="index.js"></script>
+
+</head>
+
 <body>
-        <header class="header">
-          <nav class="nav">
-            <a href="index.html" class="logo nav-link">Logo</a>
-            <button class="nav-toggle" aria-label="Abrir menú">
-              <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-menu">
-              <li class="nav-menu-item">
-                <a href="afiliarse.html" class="nav-menu-link nav-link">Afiliarse</a>
-              </li>
-              <li class="nav-menu-item">
-                <a href="login.html" class="nav-menu-link nav-link">Portal Pacientes</a>
-              </li>
-              <li class="nav-menu-item">
-                <a href="portal-medicos.html" class="nav-menu-link nav-link">Portal Médicos</a>
-              </li>
-              <li class="nav-menu-item">
-                <a href="contactos.html" class="nav-menu-link nav-link">Contacto</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
- <form class="formulario">
-    
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo nav-link">Logo</a>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-menu-item">
+          <a href="afiliarse.html" class="nav-menu-link nav-link">Afiliarse</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="login.html" class="nav-menu-link nav-link">Portal Pacientes</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="portal-medicos.html" class="nav-menu-link nav-link">Portal Médicos</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="contactos.html" class="nav-menu-link nav-link">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <form class="formulario">
+
     <h1>Afiliate a nuestra red de Medicina Prepaga</h1>
-     <div class="contenedor">
-          <div class="input-contenedor">
-         <i class="fas fa-user icon"></i>
-         <input type="text" required="{5,40}" required placeholder="Nombre Completo">
-       </div>
- 
-         <div class="input-contenedor">
-         <i class="fas fa-envelope icon"></i>
-         <input type="email" required placeholder="Correo Electrónico">
-         
-         </div>
-         <div class="input-contenedor">
-          <i class="fas fa-phone icon"></i>
-        <input type="tel"  required placeholder="Num. Teléfono">
-      </div> 
-    
- 
-          <div class="input-contenedor">
-            <i class="fas fa-suitcase icon"></i>  
-          <select name="producto" form="formulario" required>
-            <option value="plan300">Plan 300</option>
-            <option value="plan400">Plan 400</option>
-            <option value="plan500">Plan 500</option>
-            <option value="planplatinum">Plan Platinum</option>
-          </select>
-        </div>
+    <div class="contenedor">
+      <div class="input-contenedor">
+        <i class="fas fa-user icon"></i>
+        <input type="text" required="{5,40}" required placeholder="Nombre Completo">
       </div>
-         <input type="submit" value="Enviar solicitud" class="button">
-         <p>Nuestro sector de ventas se comunicará a la brevedad.</p>
-         <p>¿Ya eres cliente?<a class="link" href="login.html">Iniciar Sesión</a></p>
-     </div>
-    </form>
+
+      <div class="input-contenedor">
+        <i class="fas fa-envelope icon"></i>
+        <input type="email" required placeholder="Correo Electrónico">
+
+      </div>
+      <div class="input-contenedor">
+        <i class="fas fa-phone icon"></i>
+        <input type="tel" required placeholder="Num. Teléfono">
+      </div>
+
+
+      <div class="input-contenedor">
+        <i class="fas fa-suitcase icon"></i>
+        <select name="producto" form="formulario" required>
+          <option value="plan300">Plan 300</option>
+          <option value="plan400">Plan 400</option>
+          <option value="plan500">Plan 500</option>
+          <option value="planplatinum">Plan Platinum</option>
+        </select>
+      </div>
+    </div>
+    <input type="submit" value="Enviar solicitud" class="button">
+    <p>Nuestro sector de ventas se comunicará a la brevedad.</p>
+    <p>¿Ya eres cliente?<a class="link" href="login.html">Iniciar Sesión</a></p>
+    </div>
+  </form>
 </body>
+
 </html>
