@@ -18,7 +18,7 @@
     background-size: cover;
     background-attachment: fixed;
     padding: 90px 20px 0;
-}
+  }
 .header {
     background-color: #0769e9;
     height: 80px;
@@ -101,7 +101,65 @@
   
   
   /* MOBILE */
-
+  @media (max-width: 768px) {
+    body {
+      padding-top: 70px;
+    }
+  
+    .header {
+      height: 60px;
+    }
+  
+    .logo {
+      font-size: 25px;
+      padding: 0 20px;
+      line-height: 60px;
+      
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: #2c3e50;
+      position: fixed;
+      top: 60px;
+      width: 100%;
+      padding: 20px 0;
+  
+      height: calc(100% - 60px);
+      overflow-y: auto;
+  
+      left: 100%;
+      transition: left 0.3s;
+    }
+  
+    .nav-menu-item {
+      line-height: 70px;
+    }
+  
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+      background: none;
+      color: #83c5f7;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+    p{
+      text-align: center;
+      font-size: small;
+  }
+  }
 .contenedor{
     width: 100%;
     padding: 15px;
@@ -163,10 +221,7 @@ p{
 .link:hover{
      color: cadetblue;
 }
-@media (max-width: 768px) {
-
-}
-@media screen and (max-width: 768px)
+@media(min-width:768px)
 {
     .formulario{
         margin: auto;
@@ -182,62 +237,7 @@ p{
                "widget-1 widget-2"
                "footer footer footer";
     }
-    body {
-      padding-top: 70px;
-    }
-  
-    .header {
-      height: 60px;
-    }
-  
-    .logo {
-      font-size: 25px;
-      padding: 0 20px;
-      line-height: 60px;
-    }
-  
-    .nav-menu {
-      flex-direction: column;
-      align-items: center;
-      margin: 0;
-      background-color: #2c3e50;
-      position: fixed;
-      top: 60px;
-      width: 100%;
-      padding: 20px 0;
-  
-      height: calc(100% - 60px);
-      overflow-y: auto;
-  
-      left: 100%;
-      transition: left 0.3s;
-    }
-  
-    .nav-menu-item {
-      line-height: 70px;
-    }
-  
-    .nav-menu-link:hover,
-    .nav-menu-link_active {
-      background: none;
-      color: #83c5f7;
-    }
-  
-    .nav-toggle {
-      display: block;
-    }
-  
-    .nav-menu_visible {
-      left: 0;
-    }
-  
-    .nav-toggle:focus:not(:focus-visible) {
-      outline: none;
-    }
-    p{
-      text-align: center;
-      font-size: small;
-  }
+
 }
 
 
@@ -315,27 +315,4 @@ p{
 	color: #fff;
 	grid-area: footer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
