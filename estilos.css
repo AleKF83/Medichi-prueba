@@ -177,7 +177,8 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
-select{
+select[name="producto"]
+{
     font-size: 20px;
     width: 82%;
     padding: 10px;
