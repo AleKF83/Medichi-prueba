@@ -8,7 +8,7 @@
     width: 30vw;
     height: 30vh;
     margin: auto;
-    padding: 150px;
+    padding: 20px;
     text-align:justify;
   }
   body {
@@ -154,6 +154,10 @@
     .nav-toggle:focus:not(:focus-visible) {
       outline: none;
     }
+    p{
+      text-align: center;
+      font-size: small;
+  }
   }
 .contenedor{
     width: 100%;
@@ -203,6 +207,7 @@ select{
 }
 p{
     text-align: center;
+    
 }
 .link{
     text-decoration: none;
