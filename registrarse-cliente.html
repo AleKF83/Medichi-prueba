@@ -8,15 +8,18 @@
     content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <link rel="stylesheet" href="estilos.css">
-  <script defer src="index.js"></script>
+
+  
 
 </head>
 
 <body>
   <header class="header-menu">
     <nav class="nav">
-      <a href="index.html" class="logo nav-link">Logo</a>
-      <button class="nav-toggle" aria-label="Abrir menú">
+
+      <a href="index.html">
+        <img class="logo nav-link" src="electro.png" height="150" width="150" alt=""></a>
+      <button class="nav-toggle" aria-label="Abrir menu">
         <i class="fas fa-bars"></i>
       </button>
       <ul class="nav-menu">
@@ -35,34 +38,35 @@
       </ul>
     </nav>
   </header>
-  <form class="formulario">
+  <form class="formulario" id="formulario">
 
     <h1>Registrate</h1>
     <div class="contenedor">
 
       <div class="input-contenedor">
         <i class="fas fa-user icon"></i>
-        <input type="text" required pattern="{5,40}" placeholder="Nombre y Apellido">
-
+        <input id="usuario" type="text"placeholder="Nombre y Apellido">
+      <p></p>
       </div>
 
       <div class="input-contenedor">
         <i class="fas fa-id-card icon"></i>
         <input type="text" required="{5,40}" placeholder="Número de afiliado">
-
+        <p></p>
       </div>
 
       <div class="input-contenedor">
         <i class="fas fa-envelope icon"></i>
-        <input type="email" placeholder="Correo Electrónico">
-
+        <input id="email" type="email" placeholder="Correo Electrónico">
+        <p></p>
       </div>
 
       <div class="input-contenedor">
         <i class="fas fa-key icon"></i>
-        <input type="password" minlength="8" required placeholder="Contraseña">
+        <input id="pass" type="password" placeholder="Contraseña">
       </div>
-
+      <p></p>
+      
       <input type="submit" value="Registrate" class="button">
 
 
@@ -75,6 +79,8 @@
       <p>¿Ya tienes una cuenta?<a class="link" href="login.html">Iniciar Sesion</a></p>
     </div>
   </form>
+  <script defer src="index.js"></script>
+<script defer src="email.js"></script>
 </body>
 
 </html>
