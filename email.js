@@ -1,6 +1,7 @@
 window.addEventListener('load', ()=> {
     const form = document.querySelector('#formulario')
     const usuario = document.getElementById('usuario')
+    const afiliado  = document.getElementById('afiliado')
     const email = document.getElementById('email')
     const pass = document.getElementById('pass')
    // const passConfirma = document.getElementById('passConfirma')
@@ -13,6 +14,7 @@ window.addEventListener('load', ()=> {
     const validaCampos = ()=> {
         //capturar los valores ingresados por el usuario
         const usuarioValor = usuario.value.trim()
+        const afiliadolValor = afiliado.value.trim()
         const emailValor = email.value.trim()
         const passValor = pass.value.trim()
        // const passConfirmaValor = passConfirma.value.trim();
@@ -25,7 +27,14 @@ window.addEventListener('load', ()=> {
         }else{
             validaOk(usuario)
         }
-
+        //validando campo usuario
+        //(!usuarioValor) ? console.log('CAMPO VACIO') : console.log(usuarioValor)
+        if(!afiliadolValor){
+            //console.log('CAMPO VACIO')
+            validaFalla(afiliado, 'Campo vacío')
+        }else{
+            validaOk(afiliado)
+        }
         //validando campo email
         if(!emailValor){
             validaFalla(email, 'Campo vacío')            
@@ -65,7 +74,7 @@ window.addEventListener('load', ()=> {
 
         formControl.className = 'form-control falla'
     }
-    const validaOk = (input, msje) => {
+    const validaOk = (input) => {
         const formControl = input.parentElement
         formControl.className = 'form-control ok'
     }

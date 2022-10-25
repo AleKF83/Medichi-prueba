@@ -424,6 +424,30 @@ p {
   color: cadetblue;
 }
 
+/*control de formulario*/
+
+.form-control input {
+  border: none;
+  background-color: #f0f0f0;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 12px;
+  width: 100%;    
+}
+.form-control, input:focus {
+  outline: none;
+}
+
+.form-control.ok input {
+  border: 0.1px solid;
+  border-color: #08ffc8;
+}
+.form-control.falla input {
+  border: 0.1px solid;
+  border-color: #fe5f55;
+}
+
 .form-control p {
   visibility: hidden;
   position: absolute;
@@ -436,6 +460,8 @@ p {
   visibility: visible;
   color:#e74c3c;
 }
+
+
 /*aca termina formulario*/
 
 
