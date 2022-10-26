@@ -1,6 +1,6 @@
 window.addEventListener('load', ()=> {
     const form = document.querySelector('#formulario')
-    const usuario = document.getElementById('usuario')
+    const usuario = document.getElementById ('usuario')
     const afiliado  = document.getElementById('afiliado')
     const email = document.getElementById('email')
     const pass = document.getElementById('pass')

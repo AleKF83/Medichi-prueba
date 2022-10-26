@@ -43,20 +43,21 @@
     <div class="contenedor">
       <div class="input-contenedor">
         <i class="fas fa-user icon"></i>
-        <input type="text" required="{5,40}" required placeholder="Nombre Completo">
-      </div>
+        <input type="text" id="usuario" placeholder="Nombre Completo">
+        <p></p>
+      </div><br>
 
       <div class="input-contenedor">
         <i class="fas fa-envelope icon"></i>
-        <input type="email" required placeholder="Correo Electrónico">
+        <input type="email" id="email" placeholder="Correo Electrónico">
+      <p></p>
+      </div><br>
 
-      </div>
       <div class="input-contenedor">
         <i class="fas fa-phone icon"></i>
         <input type="tel" required placeholder="Num. Teléfono">
-      </div>
-
-
+      </div><br>
+      
       <div class="input-contenedor">
         <i class="fas fa-suitcase icon"></i>
         <select name="producto" form="formulario" required>
@@ -73,5 +74,5 @@
     </div>
   </form>
 </body>
-
+<script defer src="email.js"></script>
 </html>
